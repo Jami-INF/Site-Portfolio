@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+    h2{
+        @apply text-blue-800 my-3 align-middle
+    }
+}
+
+@layer componments {
+    .card {
+        @apply m-5 shadow-lg rounded-lg overflow-hidden
+    }
+
+}
