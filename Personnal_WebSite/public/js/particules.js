@@ -88,16 +88,16 @@ function animate() {
         let distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < souris.radius + listParticules[i].size) {
             if (souris.x < listParticules[i].x && listParticules[i].x < canvas.width - listParticules[i].size * 10) {
-                listParticules[i].x += 5;
-            }
-            if (souris.x > listParticules[i].x && listParticules[i].x > listParticules[i].size * 10) {
                 listParticules[i].x -= 5;
             }
+            if (souris.x > listParticules[i].x && listParticules[i].x > listParticules[i].size * 10) {
+                listParticules[i].x += 5;
+            }
             if (souris.y < listParticules[i].y && listParticules[i].y < canvas.height - listParticules[i].size * 10) {
-                listParticules[i].y += 5;
+                listParticules[i].y -= 5;
             }
             if (souris.y > listParticules[i].y && listParticules[i].y > listParticules[i].size * 10) {
-                listParticules[i].y -= 5;
+                listParticules[i].y += 5;
             }
         }
         listParticules[i].x += listParticules[i].directionX;
