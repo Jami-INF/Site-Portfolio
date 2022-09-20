@@ -3,7 +3,8 @@ const canvas = document.querySelector("#canvasetoile");
 
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth-17;
-canvas.height = window.innerHeight-17;
+//canvas.height = window.innerHeight-17;
+canvas.height = window.innerHeight/1.2;
 
 let listParticules;
 
@@ -60,7 +61,7 @@ function lien(){
             let distance =(listParticules[a].x - listParticules[b].x) *(listParticules[a].x - listParticules[b].x) +(listParticules[a].y - listParticules[b].y) *(listParticules[a].y - listParticules[b].y);
             if (distance < (canvas.width / 7) * (canvas.height / 7)) {
                 opacityValue = 1 - distance / 20000;
-                ctx.strokeStyle = "rgba(140,85,31," + opacityValue + ")";
+                ctx.strokeStyle = "rgba(255,255,255," + opacityValue + ")";
                 ctx.beginPath();
                 ctx.moveTo(listParticules[a].x, listParticules[a].y);
                 ctx.lineTo(listParticules[b].x, listParticules[b].y);
@@ -90,20 +91,17 @@ function animate() {
             if (souris.x < listParticules[i].x && listParticules[i].x < canvas.width - listParticules[i].size * 10) {
                 listParticules[i].x -= 5;
             }
-            if (souris.x > listParticules[i].x && listParticules[i].x > listParticules[i].size * 10) {
-                listParticules[i].x += 5;
-            }
             if (souris.y < listParticules[i].y && listParticules[i].y < canvas.height - listParticules[i].size * 10) {
-                listParticules[i].y -= 5;
+                listParticules[i].y += 5;
             }
             if (souris.y > listParticules[i].y && listParticules[i].y > listParticules[i].size * 10) {
-                listParticules[i].y += 5;
+                listParticules[i].y -= 5;
             }
         }
         listParticules[i].x += listParticules[i].directionX;
         listParticules[i].y += listParticules[i].directionY;
         ctx.beginPath();
-        ctx.arc(listParticules[i].x, listParticules[i].y, listParticules[i].size, 0, Math.PI * 2, false);
+        ctx.arc(listParticules[i].x, listParticules[i].y, listParticules[i].size, 0, 0, false);
         ctx.fillStyle = listParticules[i].color;
         ctx.fill();
         

@@ -11,30 +11,16 @@
         </style>
         <title>Jami Infante</title>
 
-        <nav class="bg-[#272727]">
+        <nav class="bg-[#272727] fixed w-full border-b	z-50	">
             <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
               <div class="relative flex items-center justify-between h-16">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   <!-- Mobile menu button-->
                   <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
-                    <!--
-                      Icon when menu is closed.
-          
-                      Heroicon name: outline/menu
-          
-                      Menu open: "hidden", Menu closed: "block"
-                    -->
                     <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                    <!--
-                      Icon when menu is open.
-          
-                      Heroicon name: outline/x
-          
-                      Menu open: "block", Menu closed: "hidden"
-                    -->
                     <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -49,12 +35,11 @@
                     <div class="flex space-x-4">
 
                       <a href="https://github.com/Jami-INF" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">GitHub</a>
-
-                      <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-          
-                      <a href="#project" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-          
+                      <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">À propos de moi</a>
+                      <a href="#abilities" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Compétences</a>
+                      <a href="#experiences" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Expériences</a>
                       <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+
                     </div>
                   </div>
                 </div>
@@ -64,16 +49,13 @@
               </div>
             </div>
            
-            <!-- Mobile menu, show/hide based on menu state. -->
+            <!-- menu Mobile-->
             <div class="sm:hidden" id="mobile-menu">
               <div class="px-2 pt-2 pb-3 space-y-1">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="https://github.com/Jami-INF" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">GitHub</a>
-          
-                <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-          
-                <a href="#project" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-          
+                <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">À propos</a>
+                <a href="#abilities" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Compétences</a>
+                <a href="#experiences" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Expériences</a>
                 <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
               </div>
             </div>
@@ -85,60 +67,253 @@
     <body class="bg-[#1b1b1b]">
         <div class ="border-y-2" >
             <div class ="absolute top-1/3 right-1/2 translate-x-1/2" >
-                <h1 class="text-center text-white text-6xl">Hi,</h1>
-                <h2 class="text-center text-white text-4xl">I'm Jami Infante</h2>
-                <h4 class="text-center text-white text-4xl">I'm a student at the <a href="https://uca.fr/">computer science</a> in Clermont-Ferrand, France</h4>
-                
+                <h1 class="text-left text-gray-100 text-6xl">Bienvenue,</h1>
+                <h2 class="text-center text-gray-100 text-4xl">Je m'appelle Jami.</h2>
+                <h4 class="text-center text-gray-300 text-3xl">Je suis étudiant alternant en licence professionnelle à <a href="https://uca.fr/">l'UCA</a> à Clermont-Ferrand et je recherche un poste de développeur web pour septembre 2022.</h4>
+                <h4 class="text-center text-gray-100 text-3xl"></h4>
             </div>
             <canvas id="canvasetoile"></canvas>
             <script type="text/javascript" src="js/particules.js"></script>
         </div>
-        <main class="flex justify-center">
-            <section class="container p-8 grid grid-cols-3">
-                <div class="card">
-                    <img class="" src="https://picsum.photoS/id/10/300/200" alt="">
-                    <div class="p-8">
-                        
-                        <h2>Bonjour</h2>
-                        <p>
-                            frfkuzfgazehfzjkheafazhefazgyefzayedfg
-                        </p>
+        <div class="m-20" id="about">
+          <h1 class="text-left text-gray-100 text-5xl">A propos</h1>
+          <h2 class="m-20 text-justify text-gray-100 text-3xl">&nbsp;&nbsp;Je ne me suis jamais éloigné du milieu de l’informatique depuis que je suis au lycée, au moment où j'ai fait mes premiers projets personnels et scolaires. Cette curiosité envers l’informatique m’a permis de découvrir avant même de m’orienter dans l’informatique les différents langages Web de manière autodidacte.</h2>
+        </div>
+        <div class="place-content-center border-y-2">
+          <ol class="m-20 relative border-l border-gray-200 dark:border-gray-700">                  
+            <li class="ml-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022-2023</time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Licence pro Application WEB</h3>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+            </li>
+            <li class="ml-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2020-2022</time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">DUT INFORMATIQUE</h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">C, Programmation Orientée Objets (Java, C#, C++),  IHM (XAML, XML), UML, Merise, .NET, Linux, Shell, bases de données (PL/SQL, SQL, PRO-C ORACLE), Programmation Web (PHP, JS, HTML, CSS)</p>
+            </li>
+            <li class="ml-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2019-2020</time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">BACCALAURÉAT STI2D OPTION SIN</h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Première et terminale en option Système d'Information et Numérique (SIN) Arduino, python, réseau, Codages binaires, hexadécimal, ASCII</p>
+            </li>
+          </ol>
+        </div>
+        <div class="m-20" id="abilities">
+          <h1 class="text-left text-gray-100 text-5xl" id="abilities">Compétences</h1>
+          <!--Languages avec curseur de maitrise-->
+          <div class="m-20">
+            <h2 class="text-left text-gray-100 text-3xl">Langages</h2>
+            <table class="w-full">
+              <tr>
+                <td>
+                  <div>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">HTML</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 80%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="" src="https://picsum.photoS/id/10/300/200" alt="">
-                    <div class="p-8">
-                        <h2>Bonjour</h2>
-                        <p>
-                            frfkuzfgazehfzjkheafazhefazgyefzayedfg
-                        </p>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">CSS</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 80%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="" src="https://picsum.photoS/id/10/300/200" alt="">
-                    <div class="p-8">
-                        <h2>Bonjour</h2>
-                        <p>
-                            frfkuzfgazehfzjkheafazhefazgyefzayedfg
-                        </p>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">JavaScript</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 60%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-            </section>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">PHP</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 60%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">BDD, SQL</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 80%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">Python</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 80%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">Java/C#</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 60%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">Git</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 90%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">Anglais - Opérationnel</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 70%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-gray-500"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="m-10">
+                      <h3 class="text-left text-gray-100 text-2xl">Espagnol - Scolaire</h3>
+                      <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                          <div style="width: 40%" class="shadow-none text-center whitespace-nowrap text-white justify-center bg-gray-500"></div>
+                        </div>
+                      </div>
+                    </div>
 
-            
-        </main>
-        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-            <div class="md:flex">
-              <div class="md:shrink-0">
-                <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://picsum.photoS/id/10/300/200" alt="Man looking at item at a store">
-              </div>
-              <div class="p-8">
-                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
-                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
-                <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
-              </div>
-            </div>
+                  </div>
+
+                </td>
+              </tr>
+            </table>
           </div>
-          
+        </div>
+        <div class="border-y-2">
+          <div class="m-20" id="experiences">
+            <h1 class="text-left text-gray-100 text-5xl" id="abilities">Expériences</h1>
+            <!-- Experiences professionnel -->
+            <ol class="list-none p-0">
+              <li class="m-20">
+                <div class="flex items-center mb-2">
+                  <div class="flex-shrink-0">
+                    <img class="w-12 h-12 rounded-full" src="img/NT-logo.png" alt="">
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Alternance - Développeur</h3>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022-2023</time>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Développement sur différents projets internes et pour des clients orienté Web. Languages : PHP, JS, HTML, CSS</p>
+                  </div>
+                </div>
+              </li>
+              <li class="m-20">
+                <div class="flex items-center mb-2">
+                  <div class="flex-shrink-0">
+                    <img class="w-12 h-12 rounded-full" src="img/NT-logo.png" alt="">
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Job d'été chez Numtech - Assistant Ingénieur</h3>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Réalisations de diverses taches pour un client (Data treatment). Continuation et aboutissement du developpement de l'outil de gestion interne commencé précédement lors du stage</p>
+                  </div>
+                </div>
+              </li>
+              <li class="m-20">
+                <div class="flex items-center mb-2">
+                  <div class="flex-shrink-0">
+                    <img class="w-12 h-12 rounded-full" src="img/NT-logo.png" alt="">
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Stage de 10 semaines chez Numtech</h3>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Développement d’un outil de gestion interne. Analyse de l'existant, analyse des besoins, développement en PHP utilisant le modèle MVC, JS, HTML, CSS.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="m-20">
+                <div class="flex items-center mb-2">
+                  <div class="flex-shrink-0">
+                    <img class="w-12 h-12 rounded-full" src="img/Tensorflow_logo.png" alt="">
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Modèle de détection d'objet - Projet Tuteuré</h3>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2021-2022</time>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Création d’une IA Capable d’identifier des objets sur des images dans le cadre d’une caméra de surveillance. Language utilisé : Python avec diverses librairies(TensorFlow, Keras, Numpy...)</p>
+                  </div>
+                </div>
+              </li>
+              
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="m-20" id="contact">
+          <h1 class="text-left text-gray-100 text-5xl" id="abilities">Me contacter</h1>
+
+          <!-- met le lien linkedin a droite avec github-->
+          <div class="flex flex-row-reverse">
+            <div>
+              <a href="https://www.linkedin.com/in/jami-infante/" target="_blank">
+                <img class="w-20 h-20 rounded-full ml-3" src="img/linkedinLogo.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/Jami-INF" target="_blank">
+                <img class="w-20 h-20 rounded-full mr-3" src="img/githubLogo.png" alt="">
+              </a>
+            </div>
+            
+          </div>
+
+          <div class="m-20">
+            <form>
+              <div class="mb-4">
+                <label class="block text-gray-400 text-sm font-bold mb-2" for="username">
+                  Nom
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text " placeholder="Nom">
+                <label class="block text-gray-400 text-sm font-bold mb-2 mt-2" for="email">
+                  Mail
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="exemple@gmail.com">
+                <label class="block text-gray-400 text-sm font-bold mb-2 mt-4" for="message">
+                  Message
+                </label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" type="text" placeholder="Message"></textarea>
+
+                <!--Bouton envoyer-->
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4" type="button">
+                  Envoyer
+                </button>
+              </div>
+            </form>
+        </div>
+      </div>
     </body>
+    <footer>
+      <div class="bg-[#272727] text-white text-center p-4">
+        <p>2022 - Réalisé par <a href="https://www.linkedin.com/in/jami-infante/">Jami</a></P>
+    </footer>
 </html>
